@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<html>
+<!-- References the Stylesheet for the CSS on the Login Page -->
+<link rel="stylesheet" type="text/css" href="css/supply.css">
+<body>
+<title> Vehicle Map </title>
+<h1>Vehicle Map</h1>
+<br></br>
+<h3>Vehicles Currently In Service </h3>
+<br></br>
+<div class="regDiv">
+
+    <button style="" type="button" onclick="goToPage('dashboard.html')">Register Vehicle</button>
+
+</div>
+<script>
+  // goToPage() Allows the Submit above to add the action to cont. to the next page from this function
+    function goToPage(urlToPage)
+    {
+        window.location.href=urlToPage
+    }
+</script>
+</body>
+</html>

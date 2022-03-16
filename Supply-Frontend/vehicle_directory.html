@@ -1,0 +1,93 @@
+ <!DOCTYPE HTML>
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../cs/js/utils.js"></script>
+<script src="../js/display_vehicle.js"></script>
+
+<html>
+    <head>
+        <title>
+            Vehicle Directory Page
+        </title>
+        <!-- References the Stylesheet for the CSS on the Login Page -->
+        <link rel="stylesheet" type="text/css" href="css/directoryStyle.css">
+
+    </head>
+
+    <body>
+      <!-- Creates a Section for the Info Below to be held in  -->
+        <div class="mainbody">
+            <center>
+            <h1>Vehicle Directory</h1>
+            <!-- Button Allows the Logout to end the Session and Return to the login page -->
+            <button class="example_c" name="logButton" onclick="load_page('index.html')">Logout</button>
+            <button class="example_d" name="homeButton" onclick="load_page('dashboard.html')">Back to Dashboard</button>
+
+            </center>
+        </div>
+        <h2>List of Vehicles</h2>
+
+        <br></br>
+        <br></br>
+
+
+<!-- Setting the style for the vehicle directory table  -->
+<center>
+<style>
+
+
+        table, th, td
+        {
+            border: 1px solid #91C9FF;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            margin:0 auto;
+            background: #2f3f4f;
+            color: #fff;
+            font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+            font-size:12px;
+
+
+
+        }
+        th {
+            text-align: center;
+            font-weight:bold;
+            color: #fff;
+            font-size:14px;
+            font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+            spacing: 0px;
+            padding: 0px;
+        }
+        td {
+          text-align:center;
+          color: #fff;
+          font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+          font-size:12px;
+
+        }
+
+</style>
+
+        </center>
+        <br></br>
+        <br></br>
+
+        <p style="text-align:center;" id="response"> </p>
+
+        </div>
+
+
+
+        <!-- Section where the buttons for Registration of Vehicles and Fleets and also Changing Info. -->
+        <div class="buttonChoices">
+        <br></br>
+            <center>
+              <!-- Temporary Button for Fake Submit to just return to the landingPage -->
+              <button class="example_b" type="button" onclick="get_vehicle()">get Vehicles</button>
+              <br></br>
+            </center>
+        </div>
+    </body>
+</html>

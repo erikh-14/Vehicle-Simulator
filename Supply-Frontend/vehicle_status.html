@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="../cs/js/utils.js"></script>
+<html>
+    <head>
+        <title>
+            Vehicle Status Page
+        </title>
+        <!-- References the Stylesheet for the CSS on the Login Page -->
+        <link rel="stylesheet" type="text/css" href="css/supply.css">
+    </head>
+
+    <body>
+      <!-- Creates a Section for the Info Below to be held in  -->
+        <div class="mainbody">
+            <center>
+            <h3 style="font-size:24px;">Vehicle Status Page</h3>
+            <!-- Button Allows the Logout to end the Session and Return to the login page -->
+            <button class="button logoutButton" name="logButton" onclick="load_page('index.html')">Logout</button>
+
+
+            </center>
+        </div>
+        <h3 style="font-size: 24px;">Status Of Vehicles</h3>
+        <br></br>
+        <br></br>
+
+        <!-- Static Text for now, but will eventually be populated with the status of the vehicles -->
+        <div class="myBlock"style="text-align:center;">********* Vehicle statuses will go here *********</div>
+
+        <!-- Section where the buttons for Registration of Vehicles and Fleets and also Changing Info. -->
+        <div class="buttonChoices">
+        <br></br>
+            <center>
+              <!-- Temporary Button for Fake Submit to just return to the landingPage -->
+              <button style="" type="button" onclick="load_page('dashboard.html')">Register Vehicle</button>
+        </div>
+    </body>
+</html>

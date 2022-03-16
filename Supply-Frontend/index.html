@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!-- Sets the source for the JS to be ran in the HTML file -->
+
+
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8"> </meta>
+    <!-- Script sources from javascript folder -->
+    <script type="text/javascript" src="js/register_vehicle.js"></script>
+    <script type="text/javascript" src="../cs/js/utils.js"></script>
+    <script type="text/javascript" src="../cs/js/login_request.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../cs/js/server_status.js"></script>
+    <script src="js/display_vehicle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css styling sources for Fleet Manager Login Page -->
+    
+    <link rel="stylesheet" type="text/css" href="css/loginPageFM.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <script>ping_server();</script>
+    </head>
+
+
+  <!-- Nav Bar for Login Page -->
+      <span style="font-family:Arial Verdana; font-size: 23px"; >
+      <nav class="navbar sticky-top navbar-dark bg-dark shadow fixed-top">
+  <!-- Nav Bar redirects user to Dashboard Page -->
+      <a class="navbar-brand" href="dashboard.html">WeGo</a
+
+
+      <i class="fas fa-cogs"></i>
+
+
+    </nav>
+
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Fleet Manager Sign In</h5>
+
+                <form class = "form-signin"  name="loginForm">
+                  <div class="form-label-group">
+                    <input type="username" id="inputUsername" name = "user" class="form-control" placeholder="Username" required autofocus onkeydown="enterKey(this)">
+                    <label for="inputUsername">Username</label>
+                  </div>
+
+                  <div class="form-label-group">
+                    <input type="password" id = "inputPassword" name = "pass" class="form-control" placeholder="Password" required onkeydown="enterKey(this)">
+                    <label for="inputPassword">Password</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" name = "submitButton" type="button" onclick="validateForm()">Sign in</button>
+                  <hr class="my-4">
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Creates a Section for the Form Below to be held in  -->
+      <p id = "server_status" align="center">Server Status</p>
+      </body>
+
+        <script>
+                    console.log ("Href: " + document.location.href);
+                    console.log ("pathname: " + document.location.pathname);
+                    console.log ("document.location: " + document.location);
+                    // Allow form inputs to submit on enter key.
+                    function enterKey(e) {
+                        if (event.key === "Enter") {
+                            validateForm();
+                        }
+                    }
+
+                    // Check if form inputs are valid.
+                    function validateForm() {
+
+                        // Check username
+                        var name = document.forms["loginForm"]["user"].value;
+
+                        if (name == "") {
+                            alert("Name must be filled out!");
+                            return false;
+                        }
+
+                        // Check Password
+                        var pass = document.forms["loginForm"]["pass"].value;
+
+                        if (pass == "") {
+                            alert("Password must be filled out!");
+                            return false;
+                        }
+
+                        // Store username and password inside a dictionary
+                        var login_dictionary = {"username": name, "password":pass};
+
+                        // Send username and password to the backend to check against values in the DB
+                        send_login_supply(login_dictionary);
+                        return false;
+                    }
+        </script>
+
+
+
+
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/register_vehicle.js"></script>
+<script type="text/javascript" src="../cs/js/utils.js"></script>
+<html>
+<!-- References the Stylesheet for the CSS on the Login Page -->
+<link rel="stylesheet" type="text/css" href="css/supply.css">
+<link rel="stylesheet" type="text/css" href="css/regVehicleStyle.css">
+<body>
+<title> Register Vehicle </title>
+<h1>Register Vehicle</h1>
+<button class="example_d" name="homeButton" onclick="load_page('dashboard.html')">Back to Dashboard</button>
+<!-- Button Allows the Logout to end the Session and Return to the login page -->
+<button class="example_c" name="logButton" onclick="load_page('index.html')">Logout</button>
+<br></br>
+<h3>Please Input Vehicle Details</h3>
+<br></br>
+<div class="regDiv">
+  <!-- This is a Form for the Input Credentials for the Registration of Vehicles -->
+  <form name = "myForm">
+    <label for="vin"><span>VIN</span></label>
+    <input type="text" id="vin" name="vin" placeholder="vin...">
+
+    <label for="vehicle_name"><span>Vehicle Name</span></label>
+    <input type="text" id="vehicle_name" name="vehicle_name" placeholder="Vehicle Name">
+
+    <label for="vType"><span>Vehicle Type</span></label>
+    <select id="vType" name="vehicle_type">
+    <option value="BUS">Bus</option>
+    <option value="TRUCK">Truck</option>
+    <option value="VAN">Van</option>
+
+    <label for="vColor"><span>Vehicle Color</span></label>
+    <input type="text" id="vColor" name="vehicle_color" placeholder="Vehicle Color: Red,Black,Silver,...">
+
+    <!-- <input type="submit" value="Submit" onclick="load_page('landingPage.html')"> -->
+    <br></br>
+    <!-- Temporary Button for Fake Submit to just return to the landingPage -->
+    <button class="example_b" type="button" onclick="validateForm()">Register Vehicle</button>
+    <button class="example_b" type="button" onclick="generate_vehicle()">Generate Random Vehicle</button>
+  </form>
+</div>
+
+<script>
+    function validateForm() {
+    var vin = document.forms["myForm"]["vin"].value;
+
+    if(vin == "") {
+      alert("vin must be filled out");
+      return false;
+    }
+
+    var vehicle_type = document.forms["myForm"]["vehicle_type"].value;
+
+    if(vehicle_type == "") {
+      alert("vehicle type must be filled out");
+      return false;
+    }
+
+    var vehicle_name = document.forms["myForm"]["vehicle_name"].value;
+
+    if(vehicle_type == "") {
+      alert("vehicle name must be filled out");
+      return false;
+    }
+
+    var vehicle_color = document.forms["myForm"]["vehicle_color"].value;
+
+    if(vehicle_type == "") {
+      alert("vehicle color must be filled out");
+      return false;
+    }
+
+
+
+    var registerDictionary = {
+      "vin": vin,
+      "vehicle_type": vehicle_type,
+      "vehicle_name": vehicle_name,
+      "vehicle_color": vehicle_color
+
+                            };
+      register_vehicle(registerDictionary);
+      return false;
+
+}
+
+
+</script>
+</body>
+</html>

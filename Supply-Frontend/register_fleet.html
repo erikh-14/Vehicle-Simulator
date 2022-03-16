@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="../cs/js/utils.js"></script>
+<html>
+<!-- References the Stylesheet for the CSS on the Login Page -->
+<link rel="stylesheet" type="text/css" href="css/supply.css">
+<body>
+<title> Register New Fleet </title>
+<link rel="stylesheet" type="text/css" href="css/directoryStyle.css">
+<h1>Register New Fleet</h1>
+<button class="example_c" name="logButton" onclick="load_page('index.html')">Logout</button>
+<button class="example_d" name="homeButton" onclick="load_page('dashboard.html')">Back to Dashboard</button>
+<br></br>
+<h3>Please Input Fleet Inventory Below</h3>
+<br></br>
+<div class="regDiv">
+
+  <!-- This is a Form for the Input Credentials for the Registration of Fleets -->
+  <form>
+    <label for="fRegion">Fleet Region</label>
+    <input type="text" id="fRegion" name="fleetRegion" placeholder="Fleet Region...">
+
+    <label for="fType">Fleet Type</label>
+    <input type="text" id="fType" name="fleetType" placeholder="Type of Fleet...">
+
+    <label for="fService">Fleet Service</label>
+    <input type="text" id="fService" name="fleetService" placeholder="Fleet Service...">
+
+    <!-- <input type="submit" value="Submit" onclick="load_page('landingPage.html')"> -->
+    <br></br>
+
+    <!-- Temporary Button for Fake Submit to just return to the landingPage -->
+    <button class="example_b" type="button" onclick="load_page('dashboard.html')">Register Fleet</button>
+  </form>
+</div>
+</body>
+</html>

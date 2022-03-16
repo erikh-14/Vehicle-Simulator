@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!-- Sets the Source for the Javascript to run in the HTML file -->
+
+
+<html lang="en">
+
+
+<head>
+  <title>
+    Fleet Manager Landing Page
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="../cs/js/utils.js"></script>
+  <!-- References the Stylesheet for the CSS on the Login Page -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Button Allows the Logout to end the Session and Return to the login page -->
+    <button class="example_c" name="logButton" onclick="load_page('index.html')">Logout</button>
+  <link rel="stylesheet" type="text/css" href="css/DashboardStyle.css">
+</head>
+
+
+<body>
+  <!-- Creates a Section for the Info Below to be held in  -->
+  <div class="mainbody">
+    <center>
+
+      <h3>Fleet Manager Dashboard</h3>
+
+      <!-- Welcomes the user with their first and last name-->
+      <!-- Feel free to move this-->
+      <p style="font-size:38px; font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;" id="welcome">Welcome!</p>
+  </div>
+
+    <center>
+      <div class="button_cont" align="center">
+        <br></br>
+        <center>
+          <!-- Each button will send to the Desired page. -->
+          <a class="example_b" onclick="load_page('register_fleet.html')">Register New Fleet</a>
+          <a class="example_b" onclick="load_page('register_vehicle.html')">Register New Vehicle</a>
+          <a class="example_b" onclick="load_page('vehicle_directory.html')">Vehicle Directory</a>
+          <a class="example_b" onclick="load_page('vehicle_simulator_map.html')">Live Vehicle Map</a>
+          <a class="example_b" onclick="load_page('dispatch_record.html')">Dispatch Record</a>
+      </div>
+
+      <br></br>
+
+
+
+
+
+      <br></br>
+      <div class="wrapper">
+      <br><small>
+        <span style="font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; font-size: 23px";>
+          <footer class="page-footer">Website designed by Hudson Smoot, and Erik Hernandez<br><br>
+          Team 12: Will Luong, Jeffrey Quade, Colby Tang, Erik Hernandez, Hudson Smoot</footer>
+
+  <br><br><br>
+  <p id="server_status"></p>
+  </small>
+
+
+
+</center>
+
+</div>
+
+    </center>
+
+
+    <!-- Section where the buttons for Registration of Vehicles and Fleets and also Changing Info. -->
+
+    <!-- <button style="background-color:black;" onclick="load_page('vehicle_map.html')">Live Vehicle Map</button> -->
+
+  </div>
+
+  <script>
+        var fullName = get_cookie("supply_firstname") + " " + get_cookie("supply_lastname");
+        console.log(fullName);
+        document.getElementById("welcome").innerHTML = "Welcome " + fullName + "!";
+  </script>
+</body>
+
+</html>

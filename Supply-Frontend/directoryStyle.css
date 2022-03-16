@@ -1,0 +1,105 @@
+h1 {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    font-size:48px;
+    background-color: transparent;
+    color:white;
+    line-height: 50px;
+
+}
+h2{
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    background-color: transparent;
+    color: white;
+    border: 2px;
+    border-color: white;
+  border-radius: 4px;
+  font-size:36px;
+
+}
+.scrollable {
+  height: 300px;
+  overflow: scroll;
+}
+#frontBox {
+  border: 2px solid white;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.example_b {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2f3f4f;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+border: 1px solid #91C9FF;
+}
+
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+.example_c {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2f3f4f;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+top: 10px;
+right: 0;
+position: absolute;
+border: 1px solid #91C9FF;
+}
+
+.example_c:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+.example_d {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2f3f4f;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+top: 10px;
+left: 0;
+position: absolute;
+border: 1px solid #91C9FF;
+}
+
+.example_d:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1490596541415-5afadbfbbf02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2218&q=80');
+  background-size: cover;
+  background-color: #2f3f4f;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

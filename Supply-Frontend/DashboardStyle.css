@@ -1,0 +1,94 @@
+
+
+#frontBox {
+  border: 2px solid white;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.example_b {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2f3f4f;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+border: 1px solid #91C9FF;
+}
+
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+.example_c {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #2f3f4f;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+top: 10px;
+right: 0;
+position: absolute;
+border: 1px solid #91C9FF;
+}
+
+.example_c:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+h3{
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    background-color: transparent;
+    color: Black;
+    border: 2px;
+    border-color: white;
+  border-radius: 4px;
+  font-size:48px;
+
+}
+.wrapper {
+    min-height: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color:  #2f3f4f;
+    color: white;
+     padding-bottom: 0.5em;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.logoutButton {
+
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+    top: 10px;
+    right: 0;
+    position: absolute;
+
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1449182325215-d517de72c42d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1917&q=80');
+  background-size: cover;
+  background-color: #2f3f4f;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

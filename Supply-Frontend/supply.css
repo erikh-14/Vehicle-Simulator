@@ -1,0 +1,275 @@
+/* The Main CSS File for the Supply Side HTML */
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+/* main body coloring and sizing */
+.body {
+  background-image: url('fleet.jpg');
+  background-repeat: repeat;
+  padding-bottom: 140px;background-color:#000000;
+
+
+}
+/* Fieldset setting and coloring */
+fieldset {
+  background-color:#ffffff;
+  padding:16px;
+  max-width:50em;
+  margin: auto;
+}
+label span { color: white; }
+
+/* Input for box forms set and inputs ********** START */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Input for box forms set and inputs ********** END */
+
+.regDiv {
+  border-radius: 5px;
+  background-color: #2f3f4f;
+  padding: 20px;
+  text-decoration-color: white;
+  border: 1px solid #91C9FF;
+}
+/* figure how to fix this below (ref to main loginPage)*/
+.loginInput, select {
+    padding:6px;
+    max-width:50em;
+    margin: auto;
+}
+
+select {
+    width: 20em;
+}
+
+.labelHomePage {
+    text-align: center;
+}
+
+.inputHomePage {
+    width: 70%;
+    text-align: center;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+.homebtn {
+    width: 20%;
+    margin: 0;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.registerButton {
+    width: 20%;
+    min-width: 5em;
+    padding: 8px 5px;
+    text-align: center;
+    background-color: #03b9f5;
+}
+
+
+
+.homeButton {
+  width: 20%;
+  min-width: 5em;
+  padding: 8px 5px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: center;
+  background-color: #ff0000;
+}
+
+/*Table for vehicle_directory */
+table, th, td
+{
+    border: solid 1px Black;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+    margin:0 auto;
+
+}
+th {
+    text-align: center;
+    font-weight:bold;
+}
+td {
+  text-align:center
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+.example_b {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #60a3bc;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+
+
+.buttonChoices button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.buttonChoices button:hover {
+  background-color: #3e8e41;
+}
+
+/* BUTTON CSS (Multiple) ***********End*/
+
+
+
+/* h1 postion style */
+h1 {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    background-color: transparent;
+    color:white;
+}
+/* Team 12 FM */
+h2 {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    background-color: black;
+    color: white;
+}
+/* Login Title */
+h3 {
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align:center;
+    background-color: transparent;
+    color: white;
+    border: 2px;
+    border-color: white;
+  border-radius: 4px;
+
+
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+
+}
+
+.footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100px;
+  position: absolute;
+  left: 0 ; right: 0; bottom: 0;
+  height:[footer-height]
+}
+/* Header Style */
+head {
+    background-color:#baf3ff;
+}
+
+/* Box styles */
+.myBlock {
+border-style: double;
+border-color: black;
+padding: 10px;
+font: 18px aerial;
+width: 800px;
+height: 300px;
+overflow-y: scroll;
+margin: auto;
+}
+
+/* Scrollbar styles (4 sections below) For the scroll bar in the Current Fleets area*/
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #000000;
+border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #E91E63;
+border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #E91E63;
+}
+
+/* Login Form Size and Color */
+.loginForm {
+    background-color: clear;
+    width: 30em;
+    max-width: 40em;
+}
+/* Position for the LoginForm input */
+.loginForm input {
+    width: 50%;
+}
+/* For the form title/heading */
+.formHeader {
+    padding: 5px;
+    background-color: clear;
+}
+/* Main body coloring and Padding */
+.mainbody {
+  background-color:#000000;
+  padding:16px;
+}
+
+
+/* For the Error */
+.error {
+    color:red;
+}
